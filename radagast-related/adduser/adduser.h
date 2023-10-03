@@ -1,8 +1,6 @@
 #ifndef adduser.h
 #define adduser.h
 #include <iostream>
-#include <string>
-
 
 using namespace std;
 
@@ -21,7 +19,7 @@ int Adduser::fnc_adduser (char user[])
 uname = user;
 //ret = system("sudo zypper se djflasjkdfhlkajsdhfajklsdhfkjsdh");
 //cout << "ret is " << ret << endl;
-exit_code = WEXITSTATUS(system("sudo useradd <user>"));
+exit_code = WEXITSTATUS(system("sudo useradd natasha"));
 cout << "The exitcode is: " << exit_code << endl;
 return exit_code;
 };
