@@ -19,7 +19,7 @@ int Adduser::fnc_adduser (char user[])
 uname = user;
 //ret = system("sudo zypper se djflasjkdfhlkajsdhfajklsdhfkjsdh");
 //cout << "ret is " << ret << endl;
-exit_code = WEXITSTATUS(system("sudo useradd natasha"));
+exit_code = WEXITSTATUS(system("sudo useradd <user>"));
 cout << "The exitcode is: " << exit_code << endl;
 return exit_code;
 };
