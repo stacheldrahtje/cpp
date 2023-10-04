@@ -18,7 +18,7 @@ int fnc_adduser (char[]);
 int Adduser::fnc_adduser (char user[])
 {
 uname = user;
-exit_code = WEXITSTATUS(system(("sudo useradd "+uname).c_str()));
+exit_code = WEXITSTATUS(system(("sudo useradd -c <fullname>"+uname).c_str()));
 cout << "The exitcode is: " << exit_code << endl;
 return exit_code;
 };
