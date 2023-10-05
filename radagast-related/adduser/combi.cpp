@@ -11,5 +11,5 @@ int main()
     combi += " -c ";
     combi += fullname;
     cout << combi << endl;
-
+    return 0;
 }
