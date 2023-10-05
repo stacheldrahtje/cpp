@@ -11,14 +11,17 @@ private:
 string uname;
 int exit_code;
 public:
-int fnc_adduser (char[]);
+int fnc_adduser (char[], char[]);
 };
 
 // function declaration
-int Adduser::fnc_adduser (char user[])
+int Adduser::fnc_adduser (char u1[], char u2[])
 {
-uname = user;
-exit_code = WEXITSTATUS(system(("sudo useradd -c <fullname>"+uname).c_str())); //idea: combine char[] for full name and username to one string with a space in between.
+uname = u1;
+uname += " ";
+uname += u2;
+cout << uname;
+exit_code = WEXITSTATUS(system(("sudo useradd -c "+uname).c_str())); //idea: combine char[] for full name and username to one string with a space in between.
 cout << "The exitcode is: " << exit_code << endl;
 return exit_code;
 };
