@@ -6,6 +6,8 @@ using namespace std;
 
 int adduser(string uname, string fname)
 {
+  int returncode;
+  
 
 }
 
