@@ -8,7 +8,7 @@ int adduser(QString uname, QString fname)
 
 }
 
-int passwd(QString uname, QString fname)
+int setpasswd(QString uname, QString fname)
 {
 
 }
