@@ -1,5 +1,5 @@
-#ifndef adduser.h
-#define adduser.h
+#ifndef command.h
+#define command.h
 
 
 
