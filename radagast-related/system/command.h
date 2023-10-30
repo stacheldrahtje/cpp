@@ -1,10 +1,11 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
-#include <QString>
+#include <iostream>
+#include <string>
 
-int adduser(QString, QString);
-int setpasswd(QString);
+int adduser(string, string);
+int setpasswd(string);
 
 
 #endif //COMMAND_H
