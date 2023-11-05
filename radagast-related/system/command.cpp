@@ -13,5 +13,5 @@ int adduser(string uname, string fname)
 
 int setpasswd(string passwd)
 {
-
+  return 0;
 }

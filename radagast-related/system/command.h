@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 
-int adduser(string, string);
-int setpasswd(string);
+int adduser(std::string, std::string);
+int setpasswd(std::string);
 
 
 #endif //COMMAND_H

@@ -1,10 +1,13 @@
 #include <iostream>
+#include <string>
+#include "command.h"
 
 using namespace std;
 
 int main()
 {
-  int exit_code;
-  exit_code = WEXITSTATUS(system("sudo whoami"));
-
+	string a = "hello";
+	string b = "world\n";
+	adduser(a, b);
+	return 0;
 }
