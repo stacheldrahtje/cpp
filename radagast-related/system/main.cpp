@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	string a = "hello";
-	string b = "world\n";
+	string b = "world";
 	adduser(a, b);
 	return 0;
 }
