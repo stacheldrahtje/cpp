@@ -8,6 +8,8 @@ int main()
 {
 	string a = "hello";
 	string b = "world";
+	string c = "!";
 	adduser(a, b);
+	setpasswd (b, c);
 	return 0;
 }
