@@ -12,7 +12,10 @@ int adduser(string uname, string fname)
   return exit_code;
 }
 
-int setpasswd(string passwd)
+int setpasswd(string uname, string passwd)
 {
-  return 0;
+  string command = "echo chpasswd "+uname+":"+passwd;
+  int exit_code;
+  exit_code = WEXITSTATUS(system(command.c_str()));  
+  return exit_code;
 }
