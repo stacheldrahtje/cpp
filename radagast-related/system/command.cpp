@@ -19,3 +19,6 @@ int setpasswd(string uname, string passwd)
   exit_code = WEXITSTATUS(system(command.c_str()));  
   return exit_code;
 }
+
+//creating and salting passwd
+//openssl passwd -6 -salt <salt randomization> <password here>
