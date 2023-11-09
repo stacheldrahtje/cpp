@@ -21,4 +21,4 @@ int setpasswd(string uname, string passwd)
 }
 
 //creating and salting passwd
-//openssl passwd -6 -salt <salt randomization> <password here>
+//openssl passwd -6 (6 means sha512) -salt <salt randomization> <password here>
